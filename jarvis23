@@ -1,0 +1,15 @@
+import time
+from plyer import notification
+def timer():
+    print ("enter current time: ")
+    time1 = int(input())
+    print ("Enter time to wake u up sir: ")
+    time2 = int(input())
+    x = time2-time1
+    y = x*60
+    time.sleep(y)
+    notification.notify(
+        title = "Alarm on..",
+        message = "Time has been over sir please complete you task...",
+        timeout = 10
+)
