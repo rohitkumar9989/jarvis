@@ -1,7 +1,9 @@
 import time
+#The plyer module for the notification
 from plyer import notification
 def timer():
     print ("enter current time: ")
+    #Current time has to be passed
     time1 = int(input())
     print ("Enter time to wake u up sir: ")
     time2 = int(input())
